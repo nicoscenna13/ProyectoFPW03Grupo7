@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Compra de productos</h1>
+    <div class="formulario">
+        <div class="datos">
+            <input type="text" id="nombre" placeholder="Nombre del producto">
+            <input type="number" id="precio" placeholder="Precio del producto">
+            <input type="text" id="comercio" placeholder="producto mas barato">
+         </div>
+         <div class="botones">
+             <button id="guardar">Guardar Producto</button>
+             <button id="listar">Listar Productos</button>
+             <button id="masBarato">Productos mas Baratos</button>
+        </div>
+    </div>
+    <div class="resultados">
+        <h2>Listado de Productos</h2>
+        <ul id="listadoProductos"></ul>
+        <h2>Productos con Menor precio</h2>
+        <ul id="menorPrecio"></ul>
+    </div>
+    <script src="./src/op.js"></script>
+</body>
+</html>
