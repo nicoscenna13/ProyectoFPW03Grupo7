@@ -7,7 +7,10 @@ const objeto1 = new Producto(
     document.getElementById("comercio").value )
 
     guardarProducto(objeto1);
-
+//UNA VEZ GUARDADO SE LIMPIAN LOS INPUTS
+    document.getElementById("nombre").value = "";
+    document.getElementById("precio").value = "";
+    document.getElementById("comercio").value = "";
 
 }
 class Producto{
@@ -62,9 +65,11 @@ document.getElementById("masBarato").onclick = function(){
 
 }
 document.getElementById("listar").onclick = function(){
+    const lista = document.getElementById("listadoProductos");
+    lista.innerHTML = "";
     productos.forEach(function(elemento){
     const opcion = ` <li> ${elemento.producto}  - $${elemento.precio} - ${elemento.comercio} </li>` ; 
-    const lista = document.getElementById("listadoProductos");
+
     lista.innerHTML += opcion;
     });
 }
