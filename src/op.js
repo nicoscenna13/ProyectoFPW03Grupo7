@@ -1,13 +1,17 @@
 const productos = [];
 
+function mayus(e) {
+    e.value = e.value.toUpperCase();
+}
+
 document.getElementById("guardar").onclick = function(){
-const objeto1 = new Producto(
-    document.getElementById("nombre").value,
-    Number(document.getElementById("precio").value),
-    document.getElementById("comercio").value )
+    const objeto1 = new Producto(
+        document.getElementById("nombre").value,
+        Number(document.getElementById("precio").value),
+        document.getElementById("comercio").value )
 
     guardarProducto(objeto1);
-//UNA VEZ GUARDADO SE LIMPIAN LOS INPUTS
+ //UNA VEZ GUARDADO SE LIMPIAN LOS INPUTS
     document.getElementById("nombre").value = "";
     document.getElementById("precio").value = "";
     document.getElementById("comercio").value = "";
