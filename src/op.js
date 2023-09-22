@@ -1,3 +1,5 @@
+import Producto from "./Producto.js";
+
 const productos = [];
 
 function mayus(e) {
@@ -17,14 +19,14 @@ document.getElementById("guardar").onclick = function(){
     document.getElementById("comercio").value = "";
 
 }
-class Producto{
+/*class Producto{
     constructor(producto,precio,comercio){
         this.producto= producto;
         this.precio= precio;
         this.comercio= comercio;
         //this.id= "0";
     }
-}
+}*/
 function guardarProducto(Producto){
 //Producto.id= generarID();
 productos.push(Producto);
