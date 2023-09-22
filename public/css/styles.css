@@ -1,0 +1,36 @@
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
+
+  body {
+    font-family: 'Playfair Display', cursive;
+    background-image: url('../img/fondoiconoss.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+   
+#titulo-principal {
+  font-weight: bold;
+  color: #585858; 
+  font-family: 'Kalam', cursive;
+}
+
+  }
+  .titulo-seccion {
+    background-color: #F3E5AB; 
+    color: rgb(11, 110, 56); 
+    padding: 1px 10px; 
+    border: 3px solid #F3E5AB; 
+    display: inline-block; 
+}
+.color-destacado {
+  font-family: 'Dancing Script', sans-serif;
+  color: #e61010; 
+}
+.list-group {
+  font-family: 'Montserrat', sans-serif; 
+  color: #1c012e; 
+  font-size: 22px;
+  font-weight: bold;
+}
